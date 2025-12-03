@@ -1,0 +1,6 @@
+[submodule "SGB-Flutter-Frontend-"]
+	path = SGB-Flutter-Frontend-
+	url = https://github.com/NickCampos03/SGB-Flutter-Frontend-.git
+[submodule "SGB---Backend"]
+	path = SGB---Backend
+	url = https://github.com/NickCampos03/SGB---Backend.git

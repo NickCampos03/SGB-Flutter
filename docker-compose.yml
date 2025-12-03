@@ -1,0 +1,16 @@
+services:
+  backend:
+    build: ./SGB---Backend/sgb-api/sgb-api
+    container_name: sgb-backend
+    env_file:
+      - ./SGB---Backend/sgb-api/sgb-api/.env
+    ports:
+      - "8080:8080"
+
+  frontend:
+    build: ./SGB-Flutter-Frontend-/sgb_app_dispmovel
+    container_name: sgb-frontend
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend
